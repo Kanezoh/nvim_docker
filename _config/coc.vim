@@ -11,3 +11,5 @@ inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
+
+command! -nargs=0 Format :call CocActionAsync('format')
