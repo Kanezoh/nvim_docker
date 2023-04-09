@@ -36,5 +36,6 @@ RUN curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 RUN nvim -c PlugInstall -c q -c q
 RUN nvim -c "CocInstall -sync coc-json coc-tsserver coc-prettier coc-clangd coc-rust-analyzer|q"
+RUN chmod -R 777 /root
 
 ENTRYPOINT ["nvim"]

@@ -9,7 +9,7 @@ docker image build . --tag=nvim:latest
 ### nvimの実行
 
 ```
-docker run -it nvim:latest
+docker run --rm -it -u $(id -u):$(id -g) -e HOME=/root -v $HOME:$HOME --workdir=$(pwd) nvim:latest .
 ```
 
 ### 見た目
