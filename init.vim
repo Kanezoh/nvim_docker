@@ -116,4 +116,9 @@ call plug#begin()
   Plug 'basyura/bitly.vim'
   Plug 'Shougo/unite.vim'
 call plug#end()
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight LineNr ctermbg=none
+highlight Folded ctermbg=none
+highlight EndOfBuffer ctermbg=none 
 runtime! _config/*.vim
