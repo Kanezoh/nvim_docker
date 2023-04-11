@@ -1,0 +1,15 @@
+{
+  "suggest.noselect": true,
+  "suggest.preferCompleteThanJumpPlaceholder": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "html",
+    "markdown",
+    "typescriptreact",
+    "typescript",
+    "javascriptreact",
+    "javascript",
+    "json",
+    "graphql"
+  ]
+}
